@@ -3,8 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raghavendra Kharosekar's Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH1zEGmGHU/mWZrW3bZ6bG5snmGGlYa2y+i9vR9/a6SkYAcCHvOp+J6PgtuXTBZpQIwzZ2+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <body>
     <header>
@@ -19,32 +20,290 @@
             </nav>
         </div>
     </header>
-    <section id="about">
-        <div class="container">
+    <section id="about" >
+        <div class="container-first">
             <h2>About Me</h2>
-            <img src="IMG_2345 2.JPG" alt="Profile Picture" class="profile-pic">
-            <p>Hi, I'm Raghavendra Kharosekar, a data scientist with expertise in Python, machine learning, and data visualization.</p>
+            <div class="about-content">
+                <img src="images/IMG_2345 2.JPG" alt="Profile Picture" class="profile-pic">
+                <p class="about-text">Hey there! I'm Raghavendra Kharosekar, your go-to data science enthusiast. With a knack for turning data into insightful stories and a passion for machine learning, I'm here to make sense of the numbers. From crunching data at the Illinois State Water Survey to crafting cool projects like drug recommendation chatbots, I love diving deep into data and emerging with actionable insights. When I'm not knee-deep in code, you can find me exploring the latest tech trends, hiking through nature, or brewing the perfect cup of coffee. Let's connect and create something awesome together!</p>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    
+                    <div class="timeline-content">
+                        <h3>University of Illinois at Urbana-Champaign</h3>
+                        <p><em>Master of Science in Information Management - GPA 4.0/4.0 | May 2025</em></p>
+                        <p>Coursework: Data Warehousing & Business Intelligence; Information Modeling; Information Consulting; Methods of Data Science.</p>
+                    </div>
+                    <div class="timeline-item-left">
+                        <img src="images/sppu-logo.png" alt="UIUC Logo" class="university-logo">
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-logo">
+                        <img src="images/uiuc-logo.png" alt="UIUC Logo" class="university-logo">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Pune Institute of Computer Technology</h3>
+                        <p><em>Bachelor of Engineering in Electronics Engineering - GPA 3.9/4.0 | July 2023</em></p>
+                        <p>Coursework: Object Oriented Programming; Database Management; Data Structures; Machine Learning & Artificial Intelligence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-category">
+                <h3>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <img src="images/python-icon.webp" alt="Python">
+                        <h4>Python</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/r-icon.png" alt="R">
+                        <h4>R</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/sas-icon.png" alt="SAS">
+                        <h4>SAS</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/sql-icon.png" alt="SQL">
+                        <h4>SQL</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/c++-icon.png" alt="C++">
+                        <h4>C++</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Data Visualization</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <img src="images/powerbi-icon.png" alt="PowerBI">
+                        <h4>PowerBI</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/tableau-icon.webp" alt="Tableau">
+                        <h4>Tableau</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/office-icon.webp" alt="Office Suite">
+                        <h4>Office Suite</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/google-workspace-icon.webp" alt="Google Workspace">
+                        <h4>Google Workspace</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/sap-business-objects-icon.webp" alt="SAP Business Objects">
+                        <h4>SAP Business Objects</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/grafana-icon.png" alt="Grafana">
+                        <h4>Grafana</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Software & Cloud Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <img src="images/github-icon.png" alt="GitHub">
+                        <h4>GitHub</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/docker-icon.webp" alt="Docker">
+                        <h4>Docker</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/mysqlworkbench-icon.png" alt="MySQL Workbench">
+                        <h4>MySQL Workbench</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>AWS</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <img src="images/aws-s3-icon.png" alt="S3">
+                        <h4>S3</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/aws-glue-icon.png" alt="Glue">
+                        <h4>Glue</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/aws-lambda-icon.png" alt="Lambda">
+                        <h4>Lambda</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/aws-databricks-icon.png" alt="Databricks">
+                        <h4>Databricks</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/aws-redshift-icon.webp" alt="Redshift">
+                        <h4>Redshift</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/aws-rds-icon.png" alt="RDS">
+                        <h4>RDS</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/aws-athena-icon.png" alt="Athena">
+                        <h4>Athena</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/aws-sagemaker-icon.png" alt="SageMaker">
+                        <h4>SageMaker</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Azure</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <img src="images/azure-datafactory-icon.png" alt="Data Factory">
+                        <h4>Data Factory</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/azure-databricks-icon.png" alt="Databricks">
+                        <h4>Databricks</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/azure-synapse-icon.png" alt="Synapse">
+                        <h4>Synapse</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="images/azure-blob-storage-icon.png" alt="Blob Storage">
+                        <h4>Blob Storage</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Data Scientist at Illinois State Water Survey</h3>
+                        <p><em>May 2024 - Present | Champaign, IL</em></p>
+                        <p>Conducted data collection and performed extensive EDA using correlation analysis, outlier detection, and visualization techniques on a dataset with over 100,000 data points across 54 features.</p>
+                    </div>
+                    <div class="timeline-logo">
+                        <img src="images/company2-logo.png" alt="Company 2 Logo" class="company-logo">
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-logo">
+                        <img src="images/company1-logo.png" alt="Company 1 Logo" class="company-logo">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Data Engineering Intern at RobIN Automotives</h3>
+                        <p><em>May 2023 - August 2023</em></p>
+                        <p>Worked on various data engineering tasks, including ETL processes, data modeling, and data integration using Python and SQL.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Software Development Intern at UST</h3>
+                        <p><em>June 2022 - August 2022</em></p>
+                        <p>Developed software solutions using Python, worked on debugging and testing applications, and collaborated with the development team to enhance product features.</p>
+                    </div>
+                    <div class="timeline-logo">
+                        <img src="images/company2-logo.png" alt="Company 2 Logo" class="company-logo">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-            <div class="project">
-                <h3>Amazon Customer Reviews ETL Project</h3>
-                <p>Developed an ETL pipeline using AWS to process and analyze customer reviews data.</p>
-            </div>
-            <div class="project">
-                <h3>Equity Market ETL and Dashboard</h3>
-                <p>Created an ETL pipeline and interactive dashboard for equity market analysis.</p>
-            </div>
-            <div class="project">
-                <h3>Dynamic Pricing Model for Freight Transportation Services</h3>
-                <p>Implemented a stochastic gradient descent regression model to optimize pricing, leading to a projected $1.2 million profit increase.</p>
+            <div class="projects-grid">
+                <div class="project">
+                    <div class="project-image" style="background-image: url('images/project1.jpg');"></div>
+                    <div class="project-details">
+                        <h3>Amazon Customer Reviews ETL Project</h3>
+                        <p>Developed an ETL pipeline using AWS to process and analyze customer reviews data.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image" style="background-image: url('images/project2.jpg');"></div>
+                    <div class="project-details">
+                        <h3>Equity Market ETL and Dashboard</h3>
+                        <p>Created an ETL pipeline and interactive dashboard for equity market analysis.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image" style="background-image: url('images/project3.jpg');"></div>
+                    <div class="project-details">
+                        <h3>Dynamic Pricing Model for Freight Transportation Services</h3>
+                        <p>Implemented a stochastic gradient descent regression model to optimize pricing, leading to a projected $1.2 million profit increase.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section id="contact">
+    
+
+    <section id="achievements">
         <div class="container">
+            <h2>Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement">
+                    <div class="achievement-icon">
+                        <h3>2022</h3>
+                        <img src="images/trophy1.png" alt="Trophy 1">
+                    </div>
+                    <div class="achievement-details">
+                        <h3>IIT Delhi - Road Safety Hackathon</h3>
+                        <p>Won a second runners up prize in the Road Safety Hackathon, organised by IIT Delhi in collaboration with the Ministry of Road, Transport & Highways, India</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="achievement-icon">
+                        <h3>2024</h3>
+                        <img src="images/trophy2.png" alt="Trophy 2">
+                    </div>
+                    <div class="achievement-details">
+                        <h3>Patent - Shape changing Smart, Safe & Secure Helmet</h3>
+                        <p>Patented an invention namely Shape changing Smart Helmet system, that provisions advanced, smart safety features for two-wheeler riders</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="achievement-icon">
+                        <h3>2022</h3>
+                        <img src="images/trophy3.png" alt="Trophy 3">
+                    </div>
+                    <div class="achievement-details">
+                        <h3>IIT Bombay - Vision Safety Hackathon</h3>
+                        <p>Won a First Runners up Prize in the Vision Safety Hackathon organised by IIT Bombay</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="contact">
+        <div class="container-last">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:rk38@illinois.edu">rk38@illinois.edu</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/raghavendra2311/" target="_blank">linkedin.com/in/raghavendra2311</a></p>
