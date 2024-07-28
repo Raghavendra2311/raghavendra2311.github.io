@@ -1,5 +1,8 @@
 body {
-    font-family: 'Inter';
+    font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
     margin: 0;
     padding: 0;
     background-color: #F0F4EF;
@@ -56,66 +59,111 @@ header nav ul li a:hover {
 }
 
 section {
-    margin-top: 50px; /* Adjust to avoid overlap with fixed header */
+    margin-top: 30px; /* Adjust to avoid overlap with fixed header */
     clear: both;
 }
 
 .container-first {
-    margin-top: 120px;
+    padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.container-first h2{
-    color:#39393A;
+.container-first h2 {
+    color: #39393A;
 }
 
 section .container {
-
     padding-left: 30px;
     padding-right: 30px;
 }
 
-section .container-last{
+section .container-last {
     margin-top: 10px;
-    padding: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     text-align: right;
 }
 
-section h2 {
+section h1 {
     text-align: center;
     margin-bottom: 20px;
+    padding-top: 20px;
     color: #39393A;
+    font-size: xx-large;
 }
 
 .about-content {
     display: flex;
-    align-items: left;
-    text-align: left;
+    align-items: center;
+    justify-content: center;
     color: #312F2F;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 .profile-pic {
-    border-radius: 10%;
+    border-radius: 8px;
     width: 300px; /* Set the width of the profile picture */
-    height: 300px; /* Set the height of the profile picture */
+    height: 350px; /* Set the height of the profile picture */
     object-fit: cover;
-    margin-right: 20px;
-    margin-left: 20px; /* Space between image and text */
+    margin-bottom: 60px;
+    margin-right: 100px;
 }
 
-.about-content p {
-    flex: 1; /* Allow the text to take up remaining space */
-    margin: 0;
-    text-align: justify;
-    align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    color: #11151C;
+.punchline{
+    font-size:xx-large;
+}
 
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; 
+}
+
+.about-button {
+    width: 100px;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #13505B;
+    color: #F0F4EF;
+    border-radius: 5px;
+}
+
+.about-button:hover {
+    background-color: #0b353f;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.column {
+    flex: 1;
+    background-color: #F0F4EF;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.column h3 {
+    margin-top: 0;
+    color: #13505B;
+    justify-self: center;
+}
+
+.column p {
+    margin: 10px 0 0;
+    color: #312F2F;
+    justify-content: center;
 }
 
 .project {
@@ -142,6 +190,14 @@ footer {
     margin-bottom: 20px;
 }
 
+/*Experience*/
+
+.company-logo {
+    width: 200px;
+    height: 200px;
+}
+
+/* General styling for the timeline section */
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -154,10 +210,10 @@ footer {
     position: absolute;
     width: 2px;
     background-color: #13505B;
-    top: 20px; /* Adjust this value to control the line starting position */
+    top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -5px;
+    margin-left: -1px;
 }
 
 .timeline-item {
@@ -180,50 +236,59 @@ footer {
     position: absolute;
     width: 25px;
     height: 25px;
-    background-color: #39393A;
-    border: 4px solid #333;
-    top: 75px;
+    background-color: #13505B;
+    border: 4px solid #F0F4EF;
+    top: 15px;
     border-radius: 50%;
     z-index: 1;
-    margin-left: -7px;
 }
 
 .timeline-item.left::after {
-    right: -12.5px;
+    right: -17px;
 }
 
 .timeline-item.right::after {
-    left: -12.5px;
+    left: -17px;
 }
 
 .timeline-content {
-    padding: 20px 30px;
-    position: relative;
+    padding: 70px 30px;
+    background-color: #F0F4EF;
     border-radius: 6px;
+    justify-content: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-logo {
-    width: 400px; /* Set a fixed width for the logo container */
+    position: absolute;
+    top: 15px;
+    left: calc(50% - 26px);
+    width: 70px;
+    height: 70px;
+    background-color: #F0F4EF;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
 }
 
-.university-logo {
-    max-width: 80px; /* Set a max width for the logos */
-    padding-left: 70%;
-    height: auto; /* Maintain aspect ratio */
+.timeline-logo img {
+    max-width: 100%;
+    height: auto;
 }
 
-.timeline-item.left .timeline-content {
-    margin-left: 0;
-    margin-right: auto;
+.timeline-date {
+    position: absolute;
+    top: 20px;
+    right: -280px;
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 400;
 }
 
-.timeline-item.right .timeline-content {
-    margin-left: auto;
-    margin-right: 0;
+.timeline-item.right .timeline-date {
+    right: auto;
+    left: -200px;
 }
 
 @media screen and (max-width: 600px) {
@@ -246,6 +311,15 @@ footer {
         margin-left: 0;
         margin-right: 0;
     }
+
+    .timeline-date {
+        right: auto;
+        left: calc(50% - 50px);
+    }
+
+    .timeline-item.right .timeline-date {
+        left: calc(50% - 50px);
+    }
 }
 
 /* Projects Section */
@@ -259,8 +333,8 @@ footer {
 
 .project {
     position: relative;
-    width: 300px; /* Set the width of each project block */
-    height: 200px; /* Set the height of each project block */
+    width: 350px; /* Set the width of each project block */
+    height: 350px; /* Set the height of each project block */
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -284,7 +358,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(55, 54, 54, 0.7);
+    background-color: #13505B;
     color: #F0F4EF;
     display: flex;
     flex-direction: column;
@@ -300,16 +374,15 @@ footer {
 
 .project-details h3 {
     margin: 10px 10px 10px 10px;
-    justify-content: center;
-    font-size: 1.2em;
+    color: #F0F4EF;
+    font-size: 1.5em;
 }
 
-.project-details p{
+.project-details p {
     margin: 10px 10px 10px 10px;
-    justify-content: center;
+    color: #F0F4EF;
     font-size: 1em;
 }
-
 
 /* Achievements Section */
 
@@ -327,7 +400,7 @@ footer {
 }
 
 .achievement-icon img {
-    width: 80px;
+    width: 160px;
     height: auto;
 }
 
@@ -342,11 +415,10 @@ footer {
     color: #666;
 }
 
-
 /* Skills Section */
 
 .skills-category {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .skills-category h3 {
@@ -356,9 +428,10 @@ footer {
 
 .skills-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .skill {
@@ -376,5 +449,69 @@ footer {
 .skill h4 {
     font-size: 1em;
     margin: 5px 0 0;
+    color: #39393A;
+}
+
+/*contact form*/
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    justify-items: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #11151C;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #13505B;
     color: #F0F4EF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0a3747;
+}
+
+.contact-links {
+    flex: 1;
+    text-align: center; /* Center the icons horizontally */
+}
+
+.contact-icon {
+    display: inline-block;
+    margin: 20 10px; /* Add some spacing between the icons */
+}
+
+.contact-image {
+    width: 40px; /* Set the desired width for the icons */
+    height: 40px; /* Set the desired height for the icons */
 }
