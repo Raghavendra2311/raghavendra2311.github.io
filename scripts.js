@@ -140,6 +140,12 @@ const navLinks = [
   { label: "Contact", href: "contact" },
 ];
 
+const stats = [
+  { label: "Projects shipped", value: "24+" },
+  { label: "Hackathon podiums", value: "3" },
+  { label: "Stakeholders served", value: "15+" },
+];
+
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -182,12 +188,12 @@ function Hero() {
   return (
     <section className="hero" id="hero">
       <div className="hero__content">
-        <p className="eyebrow">Data Science | AI | Platforms</p>
+        <p className="eyebrow">Data Science · AI · Platforms</p>
         <h1>
-          <span className="accent">Raghav</span> crafts resilient, intelligent products that turn messy data into decisive outcomes.
+          <span className="accent">Raghav</span> crafts human-centered, intelligent systems that translate messy data into decisive outcomes.
         </h1>
         <p className="lede">
-          I design AI-led experiences, automate insights, and ship cloud-native analytics for teams that need reliability and speed without sacrificing polish.
+          I build AI-led experiences, automate insights, and ship cloud-native analytics for teams that need reliability and speed without sacrificing polish.
         </p>
         <div className="hero__cta">
           <a className="button" href="https://github.com/Raghavendra2311" target="_blank" rel="noreferrer">
@@ -207,6 +213,14 @@ function Hero() {
             <a key={social.url} href={social.url} target="_blank" rel="noreferrer" aria-label={social.label}>
               <i className={social.icon} />
             </a>
+          ))}
+        </div>
+        <div className="hero__stats">
+          {stats.map((stat) => (
+            <div className="stat" key={stat.label}>
+              <div className="stat__value">{stat.value}</div>
+              <div className="stat__label">{stat.label}</div>
+            </div>
           ))}
         </div>
       </div>

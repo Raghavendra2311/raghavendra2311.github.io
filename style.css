@@ -1,15 +1,13 @@
 :root {
-  --bg: #05060f;
-  --bg-alt: #0c1024;
-  --surface: rgba(255, 255, 255, 0.04);
-  --surface-2: rgba(255, 255, 255, 0.06);
-  --card: rgba(12, 16, 36, 0.85);
-  --muted: #b4c0d8;
-  --text: #f3f6ff;
-  --accent: #8af5ff;
-  --accent-2: #ff87d7;
-  --glow: 0 18px 60px rgba(138, 245, 255, 0.22);
-  --radius: 16px;
+  --bg: #05070f;
+  --bg-alt: #0b1021;
+  --card: rgba(8, 12, 24, 0.9);
+  --muted: #b8c3da;
+  --text: #f5f7ff;
+  --accent: #8ef3c5;
+  --accent-2: #7bb7ff;
+  --glow: 0 18px 60px rgba(142, 243, 197, 0.25);
+  --radius: 18px;
   --max-width: 1180px;
   color-scheme: dark;
 }
@@ -20,15 +18,17 @@
 
 body {
   margin: 0;
-  font-family: "Space Grotesk", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at 15% 20%, rgba(138, 245, 255, 0.18), transparent 22%),
-    radial-gradient(circle at 85% 10%, rgba(255, 135, 215, 0.2), transparent 24%),
-    radial-gradient(circle at 50% 80%, rgba(126, 168, 255, 0.18), transparent 30%),
+  font-family: "Sora", "Space Grotesk", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(126, 176, 255, 0.16), transparent 26%),
+    radial-gradient(circle at 80% 8%, rgba(142, 243, 197, 0.15), transparent 25%),
+    radial-gradient(circle at 50% 78%, rgba(102, 116, 255, 0.13), transparent 35%),
     var(--bg);
   color: var(--text);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  background-attachment: fixed;
 }
 
 ::selection {
@@ -50,8 +50,8 @@ main {
   content: "";
   position: fixed;
   inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E");
-  opacity: 0.6;
+  background: url("data:image/svg+xml,%3Csvg width='140' height='140' viewBox='0 0 140 140' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E");
+  opacity: 0.55;
   pointer-events: none;
   z-index: 0;
 }
@@ -65,7 +65,9 @@ main {
   justify-content: space-between;
   gap: 16px;
   padding: 18px 32px;
-  background: rgba(5, 6, 15, 0.8);
+  background: radial-gradient(circle at 10% 20%, rgba(142, 243, 197, 0.08), transparent 40%),
+    radial-gradient(circle at 90% 0%, rgba(123, 183, 255, 0.08), transparent 40%),
+    rgba(5, 7, 15, 0.82);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
@@ -78,6 +80,7 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  font-size: 16px;
 }
 
 .topbar__brand::before {
@@ -93,6 +96,10 @@ main {
   display: flex;
   align-items: center;
   gap: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 6px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .topbar__nav button,
@@ -110,7 +117,7 @@ main {
 
 .topbar__nav button:hover,
 .topbar__nav a:hover {
-  background: rgba(255, 255, 255, 0.06);
+  background: linear-gradient(120deg, rgba(142, 243, 197, 0.18), rgba(123, 183, 255, 0.16));
   transform: translateY(-2px);
   color: #fff;
 }
@@ -131,12 +138,13 @@ main {
   background: var(--text);
 }
 
+
 .hero {
   display: grid;
   gap: 36px;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   align-items: center;
-  padding: 90px 32px 64px;
+  padding: 96px 32px 72px;
   max-width: var(--max-width);
   margin: 0 auto;
   position: relative;
@@ -145,11 +153,11 @@ main {
 .hero::after {
   content: "";
   position: absolute;
-  inset: 16%;
-  border-radius: 32px;
-  background: radial-gradient(circle at 60% 50%, rgba(138, 245, 255, 0.12), transparent 55%),
-    radial-gradient(circle at 30% 30%, rgba(255, 135, 215, 0.12), transparent 52%);
-  filter: blur(40px);
+  inset: 14%;
+  border-radius: 36px;
+  background: radial-gradient(circle at 60% 50%, rgba(142, 243, 197, 0.12), transparent 50%),
+    radial-gradient(circle at 30% 30%, rgba(123, 183, 255, 0.12), transparent 52%);
+  filter: blur(42px);
   z-index: 0;
 }
 
@@ -160,13 +168,13 @@ main {
 
 .hero h1 {
   font-size: clamp(36px, 5vw, 52px);
-  line-height: 1.1;
+  line-height: 1.05;
   margin: 12px 0;
 }
 
 .hero__content .lede {
   color: var(--muted);
-  margin: 0 0 20px;
+  margin: 0 0 22px;
   max-width: 680px;
 }
 
@@ -174,7 +182,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .hero__badges {
@@ -188,7 +196,7 @@ main {
   display: flex;
   gap: 12px;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .hero__socials a {
@@ -198,15 +206,44 @@ main {
   display: grid;
   place-items: center;
   color: var(--text);
-  background: linear-gradient(145deg, rgba(138, 245, 255, 0.12), rgba(255, 135, 215, 0.14));
+  background: linear-gradient(145deg, rgba(142, 243, 197, 0.12), rgba(123, 183, 255, 0.14));
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .hero__socials a:hover {
-  background: linear-gradient(145deg, rgba(138, 245, 255, 0.2), rgba(255, 135, 215, 0.22));
+  background: linear-gradient(145deg, rgba(142, 243, 197, 0.2), rgba(123, 183, 255, 0.22));
   transform: translateY(-3px);
   box-shadow: var(--glow);
+}
+
+.hero__stats {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  margin-top: 18px;
+}
+
+.stat {
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: radial-gradient(circle at 30% 30%, rgba(142, 243, 197, 0.12), transparent 60%),
+    radial-gradient(circle at 70% 80%, rgba(123, 183, 255, 0.12), transparent 70%),
+    rgba(255, 255, 255, 0.02);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.32);
+}
+
+.stat__value {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.stat__label {
+  color: var(--muted);
+  font-weight: 600;
+  margin-top: 2px;
 }
 
 .hero__profile {
@@ -218,7 +255,7 @@ main {
 
 .profile-card {
   width: min(100%, 420px);
-  background: linear-gradient(160deg, rgba(138, 245, 255, 0.16), rgba(255, 135, 215, 0.1)), var(--card);
+  background: linear-gradient(160deg, rgba(142, 243, 197, 0.14), rgba(123, 183, 255, 0.1)), var(--card);
   border-radius: 22px;
   padding: 20px;
   box-shadow: var(--glow);
@@ -244,6 +281,7 @@ main {
   background-position: center;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35);
 }
 
 .profile-card__body {
@@ -252,13 +290,13 @@ main {
 
 .section {
   max-width: var(--max-width);
-  padding: 36px 32px;
-  margin: 12px auto;
+  padding: 40px 32px;
+  margin: 18px auto;
   position: relative;
   border-radius: 22px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
   border: 1px solid rgba(255, 255, 255, 0.04);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 26px 72px rgba(0, 0, 0, 0.32);
 }
 
 .section::before {
@@ -376,7 +414,7 @@ main {
 }
 
 .card {
-  background: var(--card);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01)), var(--card);
   border-radius: var(--radius);
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -394,6 +432,11 @@ main {
   inset: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 60%);
   pointer-events: none;
+}
+
+.card:hover {
+  border-color: rgba(142, 243, 197, 0.4);
+  box-shadow: 0 30px 72px rgba(0, 0, 0, 0.42);
 }
 
 .card__header {
@@ -470,12 +513,13 @@ main {
 }
 
 .timeline__item {
-  background: var(--card);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01)), var(--card);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius);
   padding: 20px;
   box-shadow: 0 24px 40px rgba(0, 0, 0, 0.3);
   position: relative;
+  overflow: hidden;
 }
 
 .timeline__item::before {
@@ -487,6 +531,14 @@ main {
   width: 3px;
   background: linear-gradient(180deg, var(--accent), var(--accent-2));
   border-radius: 999px;
+}
+
+.timeline__item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 65%);
+  pointer-events: none;
 }
 
 .timeline__meta {
