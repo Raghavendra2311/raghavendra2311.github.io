@@ -211,6 +211,15 @@ main {
   transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
+.hero__socials img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 2px;
+}
+
 .hero__socials a:hover {
   background: linear-gradient(145deg, rgba(142, 243, 197, 0.2), rgba(123, 183, 255, 0.22));
   transform: translateY(-3px);
@@ -615,6 +624,15 @@ main {
   display: grid;
   gap: 10px;
   align-content: start;
+}
+
+.contact__links img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 2px;
 }
 
 .footer {

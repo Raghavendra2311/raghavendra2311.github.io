@@ -156,9 +156,9 @@ const projects = [
 ];
 
 const socials = [
-  { icon: "fa-brands fa-linkedin-in", url: "https://www.linkedin.com/in/raghavendra2311/", label: "LinkedIn" },
-  { icon: "fa-brands fa-github", url: "https://github.com/Raghavendra2311", label: "GitHub" },
-  { icon: "fa-solid fa-envelope", url: "mailto:kharosekarraghav@gmail.com", label: "Email" },
+  { iconImage: "images/linkedin-contact.png", url: "https://www.linkedin.com/in/raghavendra2311/", label: "LinkedIn" },
+  { iconImage: "images/github-contact.png", url: "https://github.com/Raghavendra2311", label: "GitHub" },
+  { iconImage: "images/email-contact.png", url: "mailto:kharosekarraghav@gmail.com", label: "Email" },
 ];
 
 const navLinks = [
@@ -240,7 +240,11 @@ function Hero() {
         <div className="hero__socials">
           {socials.map((social) => (
             <a key={social.url} href={social.url} target="_blank" rel="noreferrer" aria-label={social.label}>
-              <i className={social.icon} />
+              {social.iconImage ? (
+                <img src={social.iconImage} alt="" aria-hidden="true" />
+              ) : (
+                <i className={social.icon} />
+              )}
             </a>
           ))}
         </div>
@@ -491,7 +495,12 @@ function Contact() {
         <div className="contact__links">
           {socials.map((social) => (
             <a key={social.url} href={social.url} target="_blank" rel="noreferrer" className="pill pill--ghost">
-              <i className={social.icon} /> {social.label}
+              {social.iconImage ? (
+                <img src={social.iconImage} alt="" aria-hidden="true" />
+              ) : (
+                <i className={social.icon} />
+              )}
+              {social.label}
             </a>
           ))}
         </div>
