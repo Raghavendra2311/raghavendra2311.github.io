@@ -39,6 +39,18 @@ const experiences = [
     ],
     logo: "images/robin.png",
   },
+  {
+    role: "Project Manager",
+    company: "iSchool Experiential Learning - Marketing Analytics",
+    location: "Champaign, IL",
+    period: "Jan 2024 - May 2024",
+    achievements: [
+      "Conducted an in-depth market analysis of digital wellness and health technologies for athletes, identifying three high-growth segments.",
+      "Led a cross-functional team to build a strategic roadmap covering pricing, product-market fit, partnerships, and marketing analytics.",
+      "Enabled a projected 70%+ ROI increase and achieved a 25% faster time-to-market through alignment with consumer trends.",
+    ],
+    logo: "images/uiuc-logo.png",
+  },
 ];
 
 const educations = [
@@ -79,26 +91,47 @@ const skills = [
 
 const achievements = [
   {
-    title: "Data Quality at Scale",
-    year: "42+ parameters",
-    detail: "Instituted validation and cross-station QC to harmonize decades of water-survey data.",
+    title: "Road Safety Hackathon – IIT Delhi",
+    year: "2022",
+    detail: "Built AI-powered safety layers for two-wheelers; placed second runner-up with Ministry of Road Transport & Highways.",
     icon: "images/trophy1.png",
   },
   {
-    title: "Analytics at Volume",
-    year: "600M+ records",
-    detail: "Built KPI scorecards and trend analytics for large-scale environmental monitoring.",
+    title: "Patent: Shape-Changing Smart Helmet",
+    year: "2024",
+    detail: "Invented adaptive helmet system with advanced safety automation for riders; patent filed and awarded.",
     icon: "images/trophy2.jpeg",
   },
   {
-    title: "Researcher Enablement",
-    year: "100+ users",
-    detail: "Delivered interactive dashboards that accelerated discovery from days to minutes.",
+    title: "Vision Safety Hackathon – IIT Bombay",
+    year: "2022",
+    detail: "First runner-up for computer-vision driven proactive road-safety assist platform.",
     icon: "images/trophy3.png",
   },
 ];
 
 const projects = [
+  {
+    title: "Financial Market ETL and Dashboard",
+    blurb: "Engineered three ETL pipelines for 3M+ rows and 13,000+ assets with AWS Lambda + RDS, plus Power BI dashboards for trend and predictive insights.",
+    tags: ["AWS", "Data Engineering", "Visualization"],
+    image: "images/project3.jpg",
+    link: "#",
+  },
+  {
+    title: "Hospital Operations Dashboard and ETL",
+    blurb: "Built a Looker Studio dashboard for 1,200+ facilities and a BigQuery ETL that transforms 2M+ daily HHS records for benchmarking.",
+    tags: ["Google Cloud", "Analytics", "BI"],
+    image: "images/project2.jpg",
+    link: "#",
+  },
+  {
+    title: "Diabetes Readmission Risk Prediction",
+    blurb: "Deployed PySpark ETL on Dataproc for 100k+ records and built a 78% accuracy classifier for 30-day readmission risk.",
+    tags: ["Google Cloud", "Analytics", "Data Engineering"],
+    image: "images/project1.jpg",
+    link: "#",
+  },
   {
     title: "GCP Ads Feature Adoption Analytics",
     blurb: "Built a BigQuery + Cloud Storage pipeline to ingest 5M+ events and compute 12+ feature adoption KPIs.",
@@ -126,7 +159,6 @@ const socials = [
   { icon: "fa-brands fa-linkedin-in", url: "https://www.linkedin.com/in/raghavendra2311/", label: "LinkedIn" },
   { icon: "fa-brands fa-github", url: "https://github.com/Raghavendra2311", label: "GitHub" },
   { icon: "fa-solid fa-envelope", url: "mailto:kharosekarraghav@gmail.com", label: "Email" },
-  { icon: "fa-solid fa-phone", url: "tel:+12177665916", label: "Phone" },
 ];
 
 const navLinks = [
