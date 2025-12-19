@@ -25,7 +25,7 @@ const experiences = [
       "Engineered incremental loads into Amazon RDS (PostgreSQL) with de-duplication for clean test-vs-control reporting.",
       "Built six React dashboards, cutting time-to-insight from days to minutes for 100+ researchers.",
     ],
-    logo: "images/robin.png",
+    logo: "images/polygon.png",
   },
   {
     role: "Project Manager",
