@@ -1,6 +1,6 @@
 const { useEffect, useMemo, useState } = React;
 
-const resumeLink = "https://drive.google.com/file/d/18e__uMXvaIeGiYbPmK8Gj64ZrFNTJo0U/view?usp=sharing";
+const resumeLink = "https://drive.google.com/file/d/11DFh-LI5Gq0OtqQ6MszgsHQkCAEo5N_o/view?usp=share_link";
 
 const experiences = [
   {
@@ -28,18 +28,6 @@ const experiences = [
     logo: "images/robin.png",
   },
   {
-    role: "Data Analyst Intern",
-    company: "RobIN Automotives",
-    location: "Pune, India",
-    period: "Nov 2021 - Apr 2022",
-    achievements: [
-      "Collaborated on 54 ECU parameters and built a Python ingestion + preprocessing pipeline, improving ML readiness by 60%.",
-      "Trained a TensorFlow neural network for drive-range estimation, improving accuracy by 40%.",
-      "Published KPI dashboards in Python Matplotlib segmented by battery type and usage profiles to guide testing.",
-    ],
-    logo: "images/robin.png",
-  },
-  {
     role: "Project Manager",
     company: "iSchool Experiential Learning - Marketing Analytics",
     location: "Champaign, IL",
@@ -50,6 +38,18 @@ const experiences = [
       "Enabled a projected 70%+ ROI increase and achieved a 25% faster time-to-market through alignment with consumer trends.",
     ],
     logo: "images/uiuc-logo.png",
+  },
+  {
+    role: "Data Analyst Intern",
+    company: "RobIN Automotives",
+    location: "Pune, India",
+    period: "Nov 2021 - Apr 2022",
+    achievements: [
+      "Collaborated on 54 ECU parameters and built a Python ingestion + preprocessing pipeline, improving ML readiness by 60%.",
+      "Trained a TensorFlow neural network for drive-range estimation, improving accuracy by 40%.",
+      "Published KPI dashboards in Python Matplotlib segmented by battery type and usage profiles to guide testing.",
+    ],
+    logo: "images/robin.png",
   },
 ];
 
