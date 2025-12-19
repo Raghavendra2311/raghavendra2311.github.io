@@ -4,124 +4,120 @@ const resumeLink = "https://drive.google.com/file/d/18e__uMXvaIeGiYbPmK8Gj64ZrFN
 
 const experiences = [
   {
-    role: "Data Scientist",
+    role: "Data Analytics Engineer",
     company: "Illinois State Water Survey",
     location: "Champaign, IL",
     period: "May 2024 - Present",
     achievements: [
-      "Built correlation-led EDA on 100k+ observations to surface predictive signals for hydrological planning.",
-      "Optimized data pipelines and feature engineering to increase model throughput for research partners.",
+      "Consolidated 25+ years of daily water data across 42+ parameters with data-quality controls for reliable cross-station comparisons.",
+      "Built a scalable Python (Pandas, NumPy) time-series pipeline for 1.7M+ rows with ingestion, validation, and interpolation.",
+      "Designed a reusable SQL framework over 600M+ records to generate trend analytics and KPI scorecards for 30+ stations.",
     ],
     logo: "images/isws.png",
   },
   {
-    role: "Data Engineering Intern",
-    company: "RobIN Automotives",
-    location: "Remote",
-    period: "May 2023 - Aug 2023",
+    role: "Data Analyst",
+    company: "Polygon Health Analytics",
+    location: "Philadelphia, PA",
+    period: "Jun 2025 - Aug 2025",
     achievements: [
-      "Delivered ETL automation for vehicle telemetry using Python, SQL, and dbt-inspired transformations.",
-      "Shipped dashboards that translated battery health metrics into actionable engineering decisions.",
+      "Automated an AWS Glue (PySpark) pipeline to standardize text data with NLP mapping and maintain <24-hour freshness in S3.",
+      "Engineered incremental loads into Amazon RDS (PostgreSQL) with de-duplication for clean test-vs-control reporting.",
+      "Built six React dashboards, cutting time-to-insight from days to minutes for 100+ researchers.",
     ],
     logo: "images/robin.png",
   },
   {
-    role: "Software Development Intern",
-    company: "UST",
+    role: "Data Analyst Intern",
+    company: "RobIN Automotives",
     location: "Pune, India",
-    period: "Jun 2022 - Aug 2022",
+    period: "Nov 2021 - Apr 2022",
     achievements: [
-      "Automated regression scenarios that cut manual QA effort by 70% and improved release cadence.",
-      "Collaborated with product teams to instrument telemetry and error budgets for key services.",
+      "Collaborated on 54 ECU parameters and built a Python ingestion + preprocessing pipeline, improving ML readiness by 60%.",
+      "Trained a TensorFlow neural network for drive-range estimation, improving accuracy by 40%.",
+      "Published KPI dashboards in Python Matplotlib segmented by battery type and usage profiles to guide testing.",
     ],
-    logo: "images/ust.png",
+    logo: "images/robin.png",
   },
 ];
 
 const educations = [
   {
-    school: "University of Illinois at Urbana-Champaign",
-    program: "M.S. in Information Management (4.0/4.0)",
-    timeline: "Expected May 2025",
-    details: "Data Warehousing & BI, Information Modeling, Consulting, Methods of Data Science",
+    school: "University of Illinois Urbana-Champaign",
+    program: "M.S. in Information Management (GPA 4.0/4.0)",
+    timeline: "May 2025",
+    details: "Data Warehousing & Business Intelligence, Information Modeling, Machine Learning Cloud, Data Science, Statistical Modeling, Applied Business Research",
     logo: "images/uiuc-logo.png",
   },
   {
     school: "Pune Institute of Computer Technology",
-    program: "B.E. in Electronics Engineering, Honors in AI & ML (3.9/4.0)",
-    timeline: "Graduated Jul 2023",
-    details: "OOP, Databases, Data Structures, Machine Learning & AI",
+    program: "B.E. in Electronics and Telecommunications (GPA 3.9/4.0)",
+    timeline: "Jul 2023",
+    details: "Object Oriented Programming, Data Structures, Database Management, Mathematics Skills",
     logo: "images/sppu-logo.png",
   },
 ];
 
 const skills = [
   {
-    title: "AI & Data Science",
-    items: ["Python", "R", "SAS", "PyTorch", "scikit-learn", "TensorFlow"],
+    title: "Programming & Analytics",
+    items: ["Python (Pandas, NumPy, Matplotlib, Seaborn, scikit-learn)", "R", "SQL", "PySpark", "C++"],
   },
   {
-    title: "Data Platforms",
-    items: ["SQL", "dbt", "Airflow", "Kafka", "Docker", "GitHub"],
+    title: "Business Intelligence",
+    items: ["Microsoft Power BI", "Tableau", "SAP Business Objects", "MS Office"],
   },
   {
-    title: "Cloud & Analytics",
-    items: ["AWS (S3, Glue, Lambda, Redshift, Athena, SageMaker)", "Azure (Synapse, Databricks, Data Factory)", "Power BI", "Tableau", "Grafana"],
+    title: "Cloud & Data Platforms",
+    items: ["AWS (Glue, Databricks, S3, RDS, Athena)", "Google Cloud (GCS, Dataproc, BigQuery, Composer)", "MongoDB", "GitHub"],
   },
   {
-    title: "Product & Delivery",
-    items: ["Experimentation", "Observability", "Storytelling", "Stakeholder alignment"],
+    title: "Analytics & Statistics",
+    items: ["A/B Testing", "Hypothesis Testing", "Confidence Intervals", "Feature Importance", "Experimental Design"],
   },
 ];
 
 const achievements = [
   {
-    title: "Road Safety Hackathon – IIT Delhi",
-    year: "2022",
-    detail: "Built AI-powered safety layers for two-wheelers; placed second runner-up with Ministry of Road Transport & Highways.",
+    title: "Data Quality at Scale",
+    year: "42+ parameters",
+    detail: "Instituted validation and cross-station QC to harmonize decades of water-survey data.",
     icon: "images/trophy1.png",
   },
   {
-    title: "Patent: Shape-Changing Smart Helmet",
-    year: "2024",
-    detail: "Invented adaptive helmet system with advanced safety automation for riders; patent filed and awarded.",
+    title: "Analytics at Volume",
+    year: "600M+ records",
+    detail: "Built KPI scorecards and trend analytics for large-scale environmental monitoring.",
     icon: "images/trophy2.jpeg",
   },
   {
-    title: "Vision Safety Hackathon – IIT Bombay",
-    year: "2022",
-    detail: "First runner-up for computer-vision driven proactive road-safety assist platform.",
+    title: "Researcher Enablement",
+    year: "100+ users",
+    detail: "Delivered interactive dashboards that accelerated discovery from days to minutes.",
     icon: "images/trophy3.png",
   },
 ];
 
 const projects = [
   {
-    title: "Dynamic Pricing for Freight",
-    blurb: "Stochastic gradient descent regression to capture seasonality and boost revenue by $1.2M.",
-    tags: ["AI/ML", "Forecasting"],
+    title: "GCP Ads Feature Adoption Analytics",
+    blurb: "Built a BigQuery + Cloud Storage pipeline to ingest 5M+ events and compute 12+ feature adoption KPIs.",
+    tags: ["Analytics", "Google Cloud", "Data Engineering"],
     image: "images/project3.jpg",
     link: "#",
   },
   {
-    title: "Amazon Customer Reviews ETL",
-    blurb: "Serverless ETL with AWS Glue, Lambda, and Redshift to analyze sentiment at scale.",
-    tags: ["Data Engineering", "AWS"],
+    title: "GCP Ads Looker Studio Insights",
+    blurb: "Delivered dashboards tying spend, CTR/CVR, and ROAS to uncover high-value, low-adoption segments.",
+    tags: ["Visualization", "BI", "Analytics"],
+    image: "images/project2.jpg",
+    link: "#",
+  },
+  {
+    title: "Amazon Reviews Dashboard",
+    blurb: "Streamlined AWS Glue ETL for 400k+ reviews with Parquet output, reducing scan volume by 68%.",
+    tags: ["AWS", "Data Engineering"],
     image: "images/project1.jpg",
-    link: "#",
-  },
-  {
-    title: "Equity Market Intelligence",
-    blurb: "Batch + streaming pipeline feeding an interactive dashboard for equity research teams.",
-    tags: ["Analytics", "Visualization"],
-    image: "images/project2.jpg",
-    link: "#",
-  },
-  {
-    title: "Telemetry Reliability Suite",
-    blurb: "Observability toolkit to monitor model drift and data freshness with alerting SLAs.",
-    tags: ["MLOps", "Reliability"],
-    image: "images/project2.jpg",
     link: "#",
   },
 ];
@@ -129,7 +125,8 @@ const projects = [
 const socials = [
   { icon: "fa-brands fa-linkedin-in", url: "https://www.linkedin.com/in/raghavendra2311/", label: "LinkedIn" },
   { icon: "fa-brands fa-github", url: "https://github.com/Raghavendra2311", label: "GitHub" },
-  { icon: "fa-solid fa-envelope", url: "mailto:raghavkharosekar@gmail.com", label: "Email" },
+  { icon: "fa-solid fa-envelope", url: "mailto:kharosekarraghav@gmail.com", label: "Email" },
+  { icon: "fa-solid fa-phone", url: "tel:+12177665916", label: "Phone" },
 ];
 
 const navLinks = [
@@ -138,6 +135,12 @@ const navLinks = [
   { label: "Projects", href: "projects" },
   { label: "Skills", href: "skills" },
   { label: "Contact", href: "contact" },
+];
+
+const stats = [
+  { label: "Years of data consolidated", value: "25+" },
+  { label: "Rows processed", value: "1.7M+" },
+  { label: "Records analyzed", value: "600M+" },
 ];
 
 function Header() {
@@ -182,12 +185,12 @@ function Hero() {
   return (
     <section className="hero" id="hero">
       <div className="hero__content">
-        <p className="eyebrow">Data Science | AI | Platforms</p>
+        <p className="eyebrow">Data Analytics · BI · Cloud Platforms</p>
         <h1>
-          <span className="accent">Raghav</span> builds resilient, intelligent products that turn messy data into decisive outcomes.
+          <span className="accent">Raghav</span> turns complex data into trusted decisions for product, research, and operations leaders.
         </h1>
         <p className="lede">
-          I craft model-driven experiences, automate insights, and ship cloud-native analytics for teams that need reliability and speed.
+          Data analytics engineer focused on scalable pipelines, stakeholder-ready dashboards, and experimentation-driven insights across public sector and healthcare.
         </p>
         <div className="hero__cta">
           <a className="button" href="https://github.com/Raghavendra2311" target="_blank" rel="noreferrer">
@@ -198,9 +201,9 @@ function Hero() {
           </a>
         </div>
         <div className="hero__badges">
-          <div className="badge">AI-first roadmaps</div>
-          <div className="badge">End-to-end delivery</div>
-          <div className="badge">Operational excellence</div>
+          <div className="badge">ETL + data quality</div>
+          <div className="badge">BI storytelling</div>
+          <div className="badge">Cloud analytics</div>
         </div>
         <div className="hero__socials">
           {socials.map((social) => (
@@ -209,14 +212,22 @@ function Hero() {
             </a>
           ))}
         </div>
+        <div className="hero__stats">
+          {stats.map((stat) => (
+            <div className="stat" key={stat.label}>
+              <div className="stat__value">{stat.value}</div>
+              <div className="stat__label">{stat.label}</div>
+            </div>
+          ))}
+        </div>
       </div>
       <div className="hero__profile">
         <div className="profile-card">
-          <div className="profile-card__image" style={{ backgroundImage: "url('IMG_2345 2.JPG')" }} />
+          <div className="profile-card__image" style={{ backgroundImage: "url('images/IMG_2345 2.JPG')" }} />
           <div className="profile-card__body">
             <p className="eyebrow">Currently</p>
-            <h3>Data Scientist @ ISWS</h3>
-            <p>Building analytics that safeguard water resources and accelerate scientific decisions.</p>
+            <h3>Data Analytics Engineer @ ISWS</h3>
+            <p>Modernizing environmental datasets and KPI scorecards for statewide water monitoring.</p>
           </div>
         </div>
       </div>
@@ -230,7 +241,7 @@ function Experience() {
       <div className="section__header">
         <p className="eyebrow">Trajectory</p>
         <h2>Impact in motion</h2>
-        <p className="lede">Blending research rigor, engineering craft, and stakeholder empathy.</p>
+        <p className="lede">Delivering reliable pipelines, analytics, and BI for real-world decisions.</p>
       </div>
       <div className="timeline">
         {experiences.map((exp) => (
@@ -309,7 +320,7 @@ function Skills() {
 function Projects() {
   const [filter, setFilter] = useState("All");
 
-  const filters = useMemo(() => ["All", "AI/ML", "Data Engineering", "Analytics", "MLOps", "Visualization", "AWS", "Forecasting", "Reliability"], []);
+  const filters = useMemo(() => ["All", "Data Engineering", "Analytics", "Visualization", "AWS", "Google Cloud", "BI"], []);
 
   const filteredProjects = useMemo(() => {
     if (filter === "All") return projects;
@@ -321,7 +332,7 @@ function Projects() {
       <div className="section__header">
         <p className="eyebrow">Selected Work</p>
         <h2>Projects & Products</h2>
-        <p className="lede">High-signal builds across pricing, observability, ETL, and visualization.</p>
+        <p className="lede">End-to-end analytics builds across cloud, BI, and experimentation.</p>
       </div>
       <div className="filters">
         {filters.map((item) => (
@@ -355,7 +366,7 @@ function Achievements() {
     <section id="achievements" className="section section--grid">
       <div className="section__header">
         <p className="eyebrow">Highlights</p>
-        <h2>Awards & Recognition</h2>
+        <h2>Scale highlights</h2>
       </div>
       <div className="cards cards--achievements">
         {achievements.map((item) => (
@@ -380,21 +391,21 @@ function About() {
     <section id="about" className="section section--grid">
       <div className="section__header">
         <p className="eyebrow">About</p>
-        <h2>Crunching numbers, dropping insights</h2>
-        <p className="lede">I engineer data products that pair measurable impact with delightful execution.</p>
+        <h2>Data professional focused on clarity</h2>
+        <p className="lede">I build analytics products that are dependable, explainable, and ready for executive decisions.</p>
       </div>
       <div className="about">
         <div className="about__text">
           <p>
-            From founding member at RobIN Automotives to leading automation at UST Global and now tackling environmental analytics at ISWS, I blend experimentation, platform thinking, and pragmatic delivery.
+            I partner with research, product, and operations teams to translate complex data into dependable insights. My work spans environmental analytics, healthcare dashboards, and cloud ETL automation.
           </p>
           <p>
-            I thrive in high-velocity environments where AI, cloud, and storytelling converge to unlock new value. Whether it is designing resilient pipelines, building predictive models, or guiding stakeholders through insights, I bring focus, clarity, and momentum.
+            Whether it’s standardizing raw text data, building KPI scorecards, or optimizing large-scale pipelines, I prioritize data quality, reproducibility, and storytelling that drives action.
           </p>
           <div className="hero__badges">
-            <div className="badge">Hackathon winner ×2</div>
-            <div className="badge">Patent holder</div>
             <div className="badge">4.0 GPA at UIUC</div>
+            <div className="badge">Cloud + BI focus</div>
+            <div className="badge">Analytics leadership</div>
           </div>
         </div>
       </div>
@@ -464,7 +475,7 @@ function Footer() {
       <div className="footer__links">
         <a href={resumeLink} target="_blank" rel="noreferrer">Resume</a>
         <a href="https://github.com/Raghavendra2311" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="mailto:raghavkharosekar@gmail.com">Email</a>
+        <a href="mailto:kharosekarraghav@gmail.com">Email</a>
       </div>
     </footer>
   );
