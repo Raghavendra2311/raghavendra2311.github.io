@@ -225,8 +225,8 @@ function Hero() {
           Data analytics engineer focused on scalable pipelines, stakeholder-ready dashboards, and experimentation-driven insights across public sector and healthcare.
         </p>
         <div className="hero__cta">
-          <a className="button" href="https://github.com/Raghavendra2311" target="_blank" rel="noreferrer">
-            Explore GitHub
+          <a className="button" href="https://www.linkedin.com/in/raghavendra2311/" target="_blank" rel="noreferrer">
+            LinkedIn
           </a>
           <a className="button button--ghost" href={resumeLink} target="_blank" rel="noreferrer">
             Download Resume
